@@ -57,3 +57,5 @@ public class Solution {
 2. Add every element and track the current sum and maximum sum til now.
 3. If the sum of the previous subArray is less than the value of current element, the we don't need to consider that sunArray.
 
+#link
+https://www.interviewbit.com/problems/max-sum-contiguous-subarray/
