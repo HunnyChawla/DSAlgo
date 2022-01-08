@@ -51,3 +51,9 @@ public class Solution {
     }
 }
 
+
+#notes
+1. Interate over the elements.
+2. Add every element and track the current sum and maximum sum til now.
+3. If the sum of the previous subArray is less than the value of current element, the we don't need to consider that sunArray.
+
