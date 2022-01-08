@@ -73,3 +73,7 @@ Explanation 1:
 1. iterate over the elements of both the array.
 2. find out the distance between the elements and add it to step.
 3. maximum difference between row or column will be the distance between the coordinates
+
+#link
+
+https://www.interviewbit.com/problems/min-steps-in-infinite-grid/
