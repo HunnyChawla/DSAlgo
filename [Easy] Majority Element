@@ -1,0 +1,41 @@
+Problem Description
+
+Given an array of size n, find the majority element. The majority element is the element that appears more than floor(n/2) times.
+You may assume that the array is non-empty and the majority element always exist in the array.
+
+Example :
+
+Input : [2, 1, 2]
+Return  : 2 which occurs 2 times which is greater than 3/2.
+
+#code
+
+public class Solution {
+    // DO NOT MODIFY THE ARGUMENTS WITH "final" PREFIX. IT IS READ ONLY
+    public int majorityElement(final int[] A) {
+        int major = A[0];
+        int count = 1;
+        for(int i=1; i<A.length; i++) {
+            if(count == 0) {
+                major = A[i];
+            }
+
+            if(A[i] == major) {
+                count++;
+            }
+            else {
+                count--;
+            }
+        }
+        return major;
+    }
+}
+
+
+#steps
+Use Moore's voting algorithm
+1. Major element is that which occurs more than half of the size of the array.
+2. Each occurance of the majorty element save for atleast one, and will be cancelled by every other element in the array. The final result will be majorty element.
+
+#link
+https://www.interviewbit.com/problems/majority-element/
